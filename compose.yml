@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  banco-hg:
+    image: rfratini/imagem-banco-healthguard:0.0.2
+    container_name: banco-HG
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: urubu100 
+      MYSQL_DATABASE: HealthGuard
+      MYSQL_USER: logan
+      MYSQL_PASSWORD: senha-segura123
+    restart: unless-stopped
+
+  site-hg:
+    image: daviescudero/site-institucional:latest
+    container_name: Site-HG
+    ports:
+      - "8080:8080"
+    depends_on:
+      - banco-hg
+    restart: unless-stopped

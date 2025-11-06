@@ -78,11 +78,13 @@ apt install docker.io -y
 echo "Docker instalado com sucesso!"
 systemctl start docker
 systemctl enable docker
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 echo "Pegando imagem do banco da Health Guard"
-docker pull rfratini/imagem-banco-healthguard:0.0.2
-docker pull daviescudero/site-institucional:latest
-docker run -d --name banco-HG -p 3306:3306 imagem-banco-healthguard 
-docker run -d --name Site-HG -p 8080:8080 site-institucional 
+echo "Subindo containers com Docker Compose"
+docker-compose -f compose.yml up -d
+echo "Setup concluído! Containers estão rodando:"
+docker ps
 
 echo "Container criado com sucesso"
 echo "Docker configurado com sucesso!"
