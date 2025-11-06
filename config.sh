@@ -104,7 +104,7 @@ DB_PASSWORD='senha-segura123'
 DB_PORT=3306
 
 # Configurações do servidor de aplicação
-APP_PORT=3333
+APP_PORT=8080
 APP_HOST=localhost
 
 EOF
