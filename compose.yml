@@ -17,7 +17,7 @@ services:
     image: daviescudero/site-institucional:latest
     container_name: Site-HG
     ports:
-      - "8080:8080"
+      - "80:8080"
     depends_on:
       - banco-hg
     restart: unless-stopped
