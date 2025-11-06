@@ -93,7 +93,7 @@ echo ""
 echo "Configurando Site da aplicação... "
 git clone https://github.com/HealthGuard-Group/Site-institucional.git
 cd Site-Institucional
-cat > '.env.dev' <<EOF
+cat > '.env' <<EOF
 AMBIENTE_PROCESSO=desenvolvimento
 
 # Configurações de conexão com o banco de dados
