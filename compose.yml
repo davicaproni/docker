@@ -3,7 +3,7 @@ version: "3.9"
 services:
   banco-hg:
     image: rfratini/imagem-banco-healthguard:0.0.2
-    container_name: banco-HG
+    container_name: banco-Health
     ports:
       - "3306:3306"
     environment:
