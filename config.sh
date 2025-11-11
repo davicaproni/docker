@@ -94,7 +94,7 @@ echo "+==================================================================+"
 echo ""
 echo "Configurando Site da aplicação... "
 git clone https://github.com/HealthGuard-Group/Site-institucional.git
-cd Site-Institucional
+cd Site-institucional
 cat > '.env' <<EOF
 AMBIENTE_PROCESSO=producao
 
