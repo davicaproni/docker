@@ -73,6 +73,8 @@ echo "atualizando pacotes"
 apt update
 apt upgrade -y
 echo "Pacotes atualizados com sucesso"
+echo "instalando node.js e npm"
+apt install npm -y
 echo "Instalação do Docker na instancia"
 apt install docker.io -y
 echo "Docker instalado com sucesso!"
@@ -105,12 +107,8 @@ DB_PORT=3306
 
 # Configurações do servidor de aplicação
 APP_PORT=8080
-APP_HOST=localhost
+APP_HOST=IP da máquina aqui
 
-EOF
-echo "instalando node.js e npm"
-apt install npm -y
-npm i
 
 
 
