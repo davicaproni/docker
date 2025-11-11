@@ -101,8 +101,8 @@ AMBIENTE_PROCESSO=producao
 # Configurações de conexão com o banco de dados
 DB_HOST=localhost
 DB_DATABASE='HealthGuard'
-DB_USER='logan'
-DB_PASSWORD='senha-segura123'
+DB_USER='UsuarioAqui'
+DB_PASSWORD='SenhaAqui'
 DB_PORT=3306
 
 # Configurações do servidor de aplicação
