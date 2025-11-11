@@ -109,7 +109,7 @@ DB_PORT=3306
 APP_PORT=8080
 APP_HOST=IP da máquina aqui
 
-
+EOF
 
 
 echo "Maquina configurada com sucesso!"
